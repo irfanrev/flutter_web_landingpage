@@ -10,13 +10,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  void onPlay() async {
-    AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
-    assetsAudioPlayer.open(
-      Audio.network('https://e.top4top.io/m_2032whecr1.mp3'),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -112,25 +105,6 @@ class _HomePageState extends State<HomePage> {
                   );
                   showDialog(context: context, builder: (context) => alert);
                 },
-                child: Container(
-                  width: 180,
-                  height: 60,
-                  decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                  child: Center(
-                    child: Text('Males ah',
-                        style: GoogleFonts.poppins(
-                            fontSize: 18, color: Colors.white)),
-                  ),
-                ),
-              ),
-              SizedBox(
-                width: 10,
-              ),
-              InkWell(
-                onTap: () {},
                 child: Container(
                   width: 180,
                   height: 60,
