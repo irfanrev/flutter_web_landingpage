@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:universal_html/html.dart';
 
 void main() {
+  var audioElement = new AudioElement();
+  audioElement.src = "https://e.top4top.io/m_2032whecr1.mp3";
+  document.body!.append(audioElement);
+  audioElement.play();
   runApp(MyApp());
-  // var audioElement = new AudioElement();
-  // audioElement.src = "https://e.top4top.io/m_2032whecr1.mp3";
-  // document.body!.append(audioElement);
-  // audioElement.play();
 }
 
 class MyApp extends StatelessWidget {
